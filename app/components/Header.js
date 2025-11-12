@@ -53,7 +53,7 @@ export default function Header() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20"></div>
         <div className="absolute bottom-0 left-0 right-0 p-6">
-          <p className="text-sm font-medium text-white max-w-lg border-l-4 border-penn-red pl-4">
+          <p className="text-base font-medium text-white max-w-lg border-l-4 border-penn-red pl-4">
             &ldquo;It&apos;s okay to not be okay. Behind every perfect facade is a real person with real struggles.&rdquo;
           </p>
         </div>
