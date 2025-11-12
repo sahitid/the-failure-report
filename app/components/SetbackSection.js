@@ -1,24 +1,24 @@
 export default function SetbackSection() {
   return (
-    <section className="px-6 py-6 bg-white border-b border-neutral-200">
+    <section className="px-6 py-6 bg-neutral-800 border-b border-neutral-700">
       <div className="max-w-xl mx-auto">
         {/* Section Header */}
         <div className="mb-4">
-          <h2 className="text-xl font-bold text-neutral-900">This Week&apos;s Setback</h2>
+          <h2 className="text-xl font-bold text-white">This Week&apos;s Setback</h2>
         </div>
 
         {/* Featured Story Card */}
-        <div className="bg-cream-50 border border-neutral-200 p-5">
+        <div className="bg-neutral-900 border-l-4 border-penn-red p-5">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-medium text-neutral-500 uppercase tracking-wide">Anonymous</span>
             <span className="text-xs text-neutral-500">Wharton '25</span>
           </div>
           
-          <h3 className="text-lg font-bold text-neutral-900 mb-3 leading-tight">
+          <h3 className="text-lg font-bold text-white mb-3 leading-tight">
             &ldquo;I Blanked in My Dream Interview&rdquo;
           </h3>
           
-          <div className="text-sm text-neutral-700 leading-relaxed space-y-2">
+          <div className="text-sm text-neutral-300 leading-relaxed space-y-2">
             <p>
               I spent all of fall semester preparing for consulting recruitment. I networked, did case prep, joined a consulting club. Last week, I had my first-round interview with my dream firm—and I completely blanked on the market sizing question. Like, entirely forgot how to do basic math. I stumbled through the rest of the interview knowing I&apos;d already lost it.
             </p>

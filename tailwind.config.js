@@ -30,6 +30,19 @@ module.exports = {
           DEFAULT: '#F4E8C1',
           light: '#FFF9E6',
         },
+        'failure-gray': {
+          50: '#F8F9FA',
+          100: '#E9ECEF',
+          200: '#DEE2E6',
+          300: '#CED4DA',
+          400: '#ADB5BD',
+          500: '#6C757D',
+        },
+        'somber': {
+          light: '#E8E8E8',
+          DEFAULT: '#D3D3D3',
+          dark: '#4A4A4A',
+        },
       },
       maxWidth: {
         'email': '600px',

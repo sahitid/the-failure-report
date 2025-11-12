@@ -9,9 +9,9 @@ import Footer from './components/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-neutral-100 py-8 px-4">
+    <main className="min-h-screen bg-neutral-800 py-8 px-4">
       {/* Email Container - mimics email client max-width */}
-      <div className="email-container bg-white shadow-lg border border-neutral-200">
+      <div className="email-container bg-neutral-900 shadow-2xl border border-neutral-700">
         <Header />
         <SetbackSection />
         <AMASection />

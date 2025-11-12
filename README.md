@@ -41,11 +41,12 @@ A weekly newsletter mockup designed to combat Penn Face culture at the Universit
 ## 🎨 Design Philosophy
 
 - **Email-first layout**: Single column, 600px max-width, centered design that mimics actual email newsletters
-- **Minimalist and clean**: Soft cream and yellow tones inspired by The School of Life aesthetic
+- **Dark, raw aesthetic**: Dark grays and charcoal tones that evoke honesty and vulnerability
+- **"Failure-coded" design**: Punchy, not happy—matching the rawness of real student struggles
 - **Compact sections**: Reduced vertical spacing for a scannable, newsletter-style layout
-- **Subtle branding**: Wharton red used sparingly as accent, not as dominant background color
-- **Warm and approachable**: Soft colors, friendly typography, validating without being patronizing
-- **Extended Q&A**: 5 question-answer pairs to provide more value and community wisdom
+- **Bold accent colors**: Penn Red (#A80533) and Penn Blue (#002C77) used for impact
+- **High contrast**: White text on dark backgrounds for readability and emotional weight
+- **Extended Q&A**: Featured question about career path doubts with practical, empathetic response
 - **Mobile-responsive**: Looks great on all devices
 
 ## 🚀 Getting Started
@@ -115,13 +116,13 @@ the-failure-report/
 
 ## 🎨 Color Palette
 
-- **Penn Red**: #A80533 (primary CTA buttons, accents)
-- **Penn Blue**: #002C77 (secondary CTAs, highlights)
-- **Soft Yellow**: #F4E8C1 (header background)
-- **Cream Tones**: #FDFCF8 to #DFC896 (section backgrounds)
-- **Neutrals**: Tailwind's neutral scale (text, borders)
-- **White**: Clean section backgrounds with cream accents
-- **Overall feel**: Warm, muted, and minimalist—inspired by The School of Life with Penn branding
+- **Penn Red**: #A80533 (primary CTA buttons, story accents)
+- **Penn Blue**: #002C77 (Q&A section, secondary CTAs)
+- **Dark Backgrounds**: Neutral-900 (#171717), Neutral-800 (#262626)
+- **Text**: White and Neutral-300 for high contrast readability
+- **Borders**: Neutral-700 for subtle separation
+- **Accents**: Bold left borders on cards for visual punch
+- **Overall feel**: Raw, honest, grounded—designed to match the emotional weight of failure and vulnerability
 
 ## 💡 Key Features
 
