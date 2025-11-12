@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <header className="bg-neutral-800 border-b border-neutral-600">
+    <header className="bg-white border-b border-neutral-300">
       {/* Compact Top Bar with Real Wharton Logo */}
-      <div className="px-6 py-3 border-b border-neutral-600 bg-neutral-700">
+      <div className="px-6 py-3 border-b border-neutral-300 bg-neutral-50">
         <div className="flex items-center justify-between text-xs">
           <div className="flex items-center gap-3">
             <div className="relative h-8 w-32">
@@ -19,29 +19,29 @@ export default function Header() {
               />
             </div>
             <span className="text-neutral-400">|</span>
-            <span className="text-neutral-200 font-medium">Wellness Initiative</span>
+            <span className="text-neutral-700 font-medium">Wellness Initiative</span>
           </div>
-          <div className="text-neutral-300">
+          <div className="text-neutral-600">
             Issue #47 • Nov 12, 2025
           </div>
         </div>
       </div>
 
       {/* Main Header - Compact */}
-      <div className="px-6 py-6 text-center bg-gradient-to-b from-neutral-800 to-neutral-700">
-        <h1 className="text-3xl md:text-4xl font-display font-bold tracking-tight mb-2 text-white uppercase">
+      <div className="px-6 py-6 text-center bg-white">
+        <h1 className="text-3xl md:text-4xl font-display font-bold tracking-tight mb-2 text-neutral-900 uppercase">
           The Failure Report
         </h1>
-        <p className="text-base font-serif italic text-neutral-200 mb-3">
+        <p className="text-base font-serif italic text-neutral-700 mb-3">
           Your weekly anti-highlight reel
         </p>
-        <p className="text-sm text-neutral-300 leading-relaxed max-w-md mx-auto">
+        <p className="text-sm text-neutral-600 leading-relaxed max-w-md mx-auto">
           Real stories from Penn students who are tired of pretending everything is perfect.
         </p>
       </div>
 
       {/* Hero Image */}
-      <div className="relative w-full h-64 overflow-hidden border-t border-neutral-600 bg-neutral-700">
+      <div className="relative w-full h-64 overflow-hidden border-t border-neutral-300 bg-neutral-100">
         <Image 
           src="/hero-statue.png" 
           alt="Contemplative statue representing vulnerability"
