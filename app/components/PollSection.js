@@ -22,20 +22,20 @@ export default function PollSection() {
   }
 
   return (
-    <section className="px-6 py-6 bg-neutral-800 border-b border-neutral-700">
+    <section className="px-6 py-6 bg-white border-b border-neutral-300">
       <div className="max-w-xl mx-auto">
         {/* Section Header */}
         <div className="mb-4">
-          <h2 className="text-xl font-bold text-white mb-1">The 10-Second Poll</h2>
-          <p className="text-xs text-neutral-400">
+          <h2 className="text-xl font-display font-bold text-neutral-900 mb-1">The 10-Second Poll</h2>
+          <p className="text-xs text-neutral-600 italic">
             Quick pulse check: You&apos;re not alone in what you&apos;re feeling.
           </p>
         </div>
 
         {/* Poll Card */}
-        <div className="bg-neutral-900 border border-neutral-700">
-          <div className="bg-neutral-800 p-4 border-b border-neutral-700">
-            <h3 className="text-base font-semibold text-white">
+        <div className="bg-neutral-50 border border-neutral-300">
+          <div className="bg-neutral-100 p-4 border-b border-neutral-300">
+            <h3 className="text-base font-display font-semibold text-neutral-900">
               {pollQuestion}
             </h3>
           </div>
@@ -51,15 +51,15 @@ export default function PollSection() {
                     className={`w-full text-left px-4 py-3 border transition-all duration-300 
                       ${selectedOption === option.id 
                         ? 'border-penn-red bg-penn-red/10' 
-                        : 'border-neutral-700 hover:border-neutral-600 bg-neutral-800'
+                        : 'border-neutral-300 hover:border-neutral-400 bg-white'
                       }`}
                   >
                     <div className="flex items-center justify-between">
-                      <span className="text-sm font-medium text-neutral-200">{option.text}</span>
+                      <span className="text-sm font-medium text-neutral-800">{option.text}</span>
                       <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center
                         ${selectedOption === option.id 
                           ? 'border-penn-red bg-penn-red' 
-                          : 'border-neutral-600'
+                          : 'border-neutral-400'
                         }`}>
                         {selectedOption === option.id && (
                           <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -74,20 +74,20 @@ export default function PollSection() {
             ) : (
               // Results View
               <div className="space-y-3">
-                <div className="bg-neutral-800 border border-neutral-700 p-3 mb-3">
-                  <p className="text-xs text-neutral-400">✓ Your response has been recorded</p>
+                <div className="bg-neutral-100 border border-neutral-300 p-3 mb-3">
+                  <p className="text-xs text-neutral-700">✓ Your response has been recorded</p>
                 </div>
 
                 {options.map((option) => (
                   <div key={option.id} className="space-y-1.5">
                     <div className="flex items-center justify-between text-xs">
-                      <span className={`font-medium ${option.id === selectedOption ? 'text-white' : 'text-neutral-400'}`}>
+                      <span className={`font-medium ${option.id === selectedOption ? 'text-neutral-900' : 'text-neutral-600'}`}>
                         {option.text}
                         {option.id === selectedOption && ' ✓'}
                       </span>
-                      <span className="font-semibold text-white">{option.percentage}%</span>
+                      <span className="font-semibold text-neutral-900">{option.percentage}%</span>
                     </div>
-                    <div className="w-full bg-neutral-800 h-2">
+                    <div className="w-full bg-neutral-200 h-2">
                       <div 
                         className={`${option.color} h-full transition-all duration-1000 ease-out`}
                         style={{ width: `${option.percentage}%` }}
@@ -96,11 +96,11 @@ export default function PollSection() {
                   </div>
                 ))}
 
-                <div className="mt-4 pt-3 border-t border-neutral-700 space-y-2">
-                  <p className="text-sm text-white font-semibold">
+                <div className="mt-4 pt-3 border-t border-neutral-300 space-y-2">
+                  <p className="text-sm text-neutral-900 font-semibold">
                     78% of readers felt overwhelmed by club applications too.
                   </p>
-                  <p className="text-xs text-neutral-400">
+                  <p className="text-xs text-neutral-600">
                     You&apos;re not alone. <span className="font-semibold">234 students</span> have responded so far.
                   </p>
                 </div>

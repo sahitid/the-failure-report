@@ -41,11 +41,15 @@ A weekly newsletter mockup designed to combat Penn Face culture at the Universit
 ## 🎨 Design Philosophy
 
 - **Email-first layout**: Single column, 600px max-width, centered design that mimics actual email newsletters
-- **Dark, raw aesthetic**: Dark grays and charcoal tones that evoke honesty and vulnerability
+- **Balanced aesthetic**: Clean white content sections with dark header for emotional weight
 - **"Failure-coded" design**: Punchy, not happy—matching the rawness of real student struggles
+- **Typography with personality**: 
+  - Space Grotesk for bold, geometric headlines
+  - Bitter serif for story titles and quotes (adds gravitas)
+  - Inter for readable body text
 - **Compact sections**: Reduced vertical spacing for a scannable, newsletter-style layout
 - **Bold accent colors**: Penn Red (#A80533) and Penn Blue (#002C77) used for impact
-- **High contrast**: White text on dark backgrounds for readability and emotional weight
+- **High contrast**: Dark header with readable light content sections
 - **Extended Q&A**: Featured question about career path doubts with practical, empathetic response
 - **Mobile-responsive**: Looks great on all devices
 
@@ -92,7 +96,10 @@ npm start
 
 - **Framework**: Next.js 14 with App Router
 - **Styling**: Tailwind CSS
-- **Font**: Inter (Google Fonts)
+- **Fonts**: 
+  - Space Grotesk (Display/Headers - modern, geometric, distinctive)
+  - Bitter (Serif - for story titles and quotes, adds character)
+  - Inter (Body text - clean, readable)
 - **Interactivity**: React hooks for poll functionality
 
 ## 📁 Project Structure
