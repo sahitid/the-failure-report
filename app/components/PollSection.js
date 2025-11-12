@@ -6,12 +6,12 @@ export default function PollSection() {
   const [voted, setVoted] = useState(false)
   const [selectedOption, setSelectedOption] = useState(null)
 
-  const pollQuestion = "Has club recruiting been stressful for you recently?"
+  const pollQuestion = "Have you felt overwhelmed by club recruitment this semester?"
   const options = [
-    { id: 1, text: "Extremely stressful", percentage: 43, color: "bg-wharton-red" },
-    { id: 2, text: "Somewhat stressful", percentage: 35, color: "bg-wharton-red-light" },
-    { id: 3, text: "Not really stressful", percentage: 15, color: "bg-neutral-400" },
-    { id: 4, text: "Not stressful at all", percentage: 7, color: "bg-neutral-300" },
+    { id: 1, text: "Yes, extremely", percentage: 48, color: "bg-penn-red" },
+    { id: 2, text: "Somewhat", percentage: 30, color: "bg-penn-blue" },
+    { id: 3, text: "Not really", percentage: 15, color: "bg-neutral-400" },
+    { id: 4, text: "I didn't recruit", percentage: 7, color: "bg-neutral-300" },
   ]
 
   const handleVote = (optionId) => {
@@ -96,10 +96,12 @@ export default function PollSection() {
                   </div>
                 ))}
 
-                <div className="mt-4 pt-3 border-t border-neutral-200">
-                  <p className="text-xs text-neutral-600 leading-relaxed">
-                    <span className="font-semibold text-neutral-900">78% of readers</span> have found club recruiting 
-                    stressful. You&apos;re not alone in what you&apos;re feeling.
+                <div className="mt-4 pt-3 border-t border-neutral-200 space-y-2">
+                  <p className="text-sm text-neutral-900 font-semibold">
+                    78% of readers felt overwhelmed by club applications too.
+                  </p>
+                  <p className="text-xs text-neutral-600">
+                    You&apos;re not alone. <span className="font-semibold">234 students</span> have responded so far.
                   </p>
                 </div>
               </div>

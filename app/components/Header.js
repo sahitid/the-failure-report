@@ -12,12 +12,14 @@ export default function Header() {
                 src="/wharton-logo.png" 
                 alt="Wharton Logo"
                 fill
+                sizes="128px"
                 style={{ objectFit: 'contain' }}
                 priority
+                quality={100}
               />
             </div>
             <span className="text-neutral-400">|</span>
-            <span className="text-neutral-600 font-medium">Wellness Initiative</span>
+            <span className="text-penn-blue font-medium">Wellness Initiative</span>
           </div>
           <div className="text-neutral-500">
             Issue #47 • Nov 12, 2025
@@ -39,13 +41,15 @@ export default function Header() {
       </div>
 
       {/* Hero Image */}
-      <div className="relative w-full h-64 overflow-hidden border-t border-neutral-200">
+      <div className="relative w-full h-64 overflow-hidden border-t border-neutral-200 bg-neutral-100">
         <Image 
           src="/hero-statue.png" 
           alt="Contemplative statue representing vulnerability"
           fill
+          sizes="(max-width: 600px) 100vw, 600px"
           style={{ objectFit: 'cover', objectPosition: 'center' }}
           priority
+          quality={90}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

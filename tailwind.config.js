@@ -8,10 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'wharton-red': {
-          DEFAULT: '#990000',
+        'penn-red': {
+          DEFAULT: '#A80533',
           light: '#C41230',
           dark: '#7A0000',
+        },
+        'penn-blue': {
+          DEFAULT: '#002C77',
+          light: '#003D99',
+          dark: '#001F55',
         },
         'cream': {
           50: '#FDFCF8',

@@ -115,12 +115,13 @@ the-failure-report/
 
 ## 🎨 Color Palette
 
+- **Penn Red**: #A80533 (primary CTA buttons, accents)
+- **Penn Blue**: #002C77 (secondary CTAs, highlights)
 - **Soft Yellow**: #F4E8C1 (header background)
 - **Cream Tones**: #FDFCF8 to #DFC896 (section backgrounds)
-- **Wharton Red**: #990000 (subtle accent, logo)
 - **Neutrals**: Tailwind's neutral scale (text, borders)
 - **White**: Clean section backgrounds with cream accents
-- **Overall feel**: Warm, muted, and minimalist—inspired by The School of Life
+- **Overall feel**: Warm, muted, and minimalist—inspired by The School of Life with Penn branding
 
 ## 💡 Key Features
 
