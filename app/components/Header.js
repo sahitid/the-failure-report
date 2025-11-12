@@ -41,7 +41,7 @@ export default function Header() {
       {/* Hero Image */}
       <div className="relative w-full h-64 overflow-hidden border-t border-neutral-200">
         <Image 
-          src="/hero-statue.jpg" 
+          src="/hero-statue.png" 
           alt="Contemplative statue representing vulnerability"
           fill
           style={{ objectFit: 'cover', objectPosition: 'center' }}

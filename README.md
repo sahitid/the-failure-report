@@ -70,7 +70,7 @@ npm install
 
 3. Add your images to the `public/` folder:
    - Save the Wharton logo as `public/wharton-logo.png`
-   - Save the hero statue image as `public/hero-statue.jpg`
+   - Save the hero statue image as `public/hero-statue.png`
    - See `SETUP_IMAGES.md` for detailed specifications
 
 4. Run the development server:

@@ -18,11 +18,11 @@ public/wharton-logo.png
 
 Save the statue image (the contemplative figure with hand on face) as:
 ```
-public/hero-statue.jpg
+public/hero-statue.png
 ```
 
 **Recommended specifications:**
-- Format: JPG or PNG
+- Format: PNG
 - Dimensions: Minimum 1200px wide for good quality
 - Aspect ratio: Wide/landscape format works best
 - The image will display at full newsletter width (600px max) × 256px tall
@@ -34,7 +34,7 @@ After adding the images, your `public/` folder should look like this:
 ```
 public/
 ├── wharton-logo.png
-└── hero-statue.jpg
+└── hero-statue.png
 ```
 
 ## 4. Alternative: Use Direct URLs
