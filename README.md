@@ -11,9 +11,10 @@ A weekly newsletter mockup designed to combat Penn Face culture at the Universit
 ### Newsletter Sections
 
 1. **Header with Wharton Branding**
-   - Official Wharton logo and colors (#990000, #C41230)
+   - Official Wharton logo (actual logo image)
    - Newsletter title and tagline
-   - Mission statement about combating Penn Face
+   - Hero image featuring contemplative statue with overlay quote
+   - Soft, warm color palette
 
 2. **This Week's Setback**
    - Featured 200-word anonymous story from a Penn student
@@ -40,9 +41,11 @@ A weekly newsletter mockup designed to combat Penn Face culture at the Universit
 ## 🎨 Design Philosophy
 
 - **Email-first layout**: Single column, 600px max-width, centered design that mimics actual email newsletters
+- **Minimalist and clean**: Soft cream and yellow tones inspired by The School of Life aesthetic
+- **Compact sections**: Reduced vertical spacing for a scannable, newsletter-style layout
+- **Subtle branding**: Wharton red used sparingly as accent, not as dominant background color
 - **Warm and approachable**: Soft colors, friendly typography, validating without being patronizing
-- **Wharton branding**: Official red colors (#990000, #C41230) with neutrals
-- **Subtle interactions**: Hover states, smooth transitions, and animations
+- **Extended Q&A**: 5 question-answer pairs to provide more value and community wisdom
 - **Mobile-responsive**: Looks great on all devices
 
 ## 🚀 Getting Started
@@ -65,12 +68,17 @@ cd the-failure-report
 npm install
 ```
 
-3. Run the development server:
+3. Add your images to the `public/` folder:
+   - Save the Wharton logo as `public/wharton-logo.png`
+   - Save the hero statue image as `public/hero-statue.jpg`
+   - See `SETUP_IMAGES.md` for detailed specifications
+
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ### Build for Production
 
@@ -107,10 +115,12 @@ the-failure-report/
 
 ## 🎨 Color Palette
 
-- **Wharton Red**: #990000 (primary)
-- **Wharton Red Light**: #C41230 (accent)
-- **Neutrals**: Tailwind's neutral scale
-- **Backgrounds**: Soft rose and neutral tints for warmth
+- **Soft Yellow**: #F4E8C1 (header background)
+- **Cream Tones**: #FDFCF8 to #DFC896 (section backgrounds)
+- **Wharton Red**: #990000 (subtle accent, logo)
+- **Neutrals**: Tailwind's neutral scale (text, borders)
+- **White**: Clean section backgrounds with cream accents
+- **Overall feel**: Warm, muted, and minimalist—inspired by The School of Life
 
 ## 💡 Key Features
 
@@ -124,7 +134,8 @@ The poll section includes simulated interactivity:
 ### Authentic Content
 All placeholder content is designed to feel authentic to college struggles:
 - Real academic challenges (failing midterms, recruiting stress)
-- Practical advice from peers
+- Practical advice from peers (5 Q&A pairs covering various topics)
+- Topics include: recruiting stress, imposter syndrome, friendship dynamics, major selection, and mental health
 - Validating statistics and messaging
 
 ### Email-Safe Design

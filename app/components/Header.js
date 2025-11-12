@@ -1,56 +1,56 @@
+import Image from 'next/image'
+
 export default function Header() {
   return (
-    <header className="bg-gradient-to-br from-wharton-red to-wharton-red-light text-white">
-      {/* Top Bar with Logo */}
-      <div className="border-b border-white/20 py-4 px-6">
-        <div className="flex items-center justify-between">
+    <header className="bg-soft-yellow border-b border-neutral-200">
+      {/* Compact Top Bar with Real Wharton Logo */}
+      <div className="px-6 py-3 border-b border-neutral-200/50 bg-cream-50">
+        <div className="flex items-center justify-between text-xs">
           <div className="flex items-center gap-3">
-            {/* Wharton Logo */}
-            <div className="bg-white rounded-lg p-2 shadow-lg">
-              <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100" height="100" fill="#990000"/>
-                <text x="50" y="55" fontSize="36" fill="white" fontWeight="bold" textAnchor="middle" fontFamily="serif">W</text>
-              </svg>
+            <div className="relative h-8 w-32">
+              <Image 
+                src="/wharton-logo.png" 
+                alt="Wharton Logo"
+                fill
+                style={{ objectFit: 'contain' }}
+                priority
+              />
             </div>
-            <div>
-              <div className="text-xs font-semibold tracking-wider opacity-90">WHARTON WELLNESS</div>
-              <div className="text-[10px] opacity-75">University of Pennsylvania</div>
-            </div>
+            <span className="text-neutral-400">|</span>
+            <span className="text-neutral-600 font-medium">Wellness Initiative</span>
           </div>
-          <div className="text-right">
-            <div className="text-xs opacity-90">Issue #47</div>
-            <div className="text-[10px] opacity-75">November 12, 2025</div>
+          <div className="text-neutral-500">
+            Issue #47 • Nov 12, 2025
           </div>
         </div>
       </div>
 
-      {/* Main Header */}
-      <div className="px-6 py-10 text-center">
-        <div className="inline-block">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 animate-fade-in">
-            The Failure Report
-          </h1>
-          <div className="h-1 bg-white/40 rounded-full mb-4 transform transition-all duration-500 hover:scale-105"></div>
-        </div>
-        <p className="text-xl md:text-2xl font-light tracking-wide opacity-95 mb-6">
+      {/* Main Header - Compact */}
+      <div className="px-6 py-6 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-neutral-900">
+          The Failure Report
+        </h1>
+        <p className="text-base text-neutral-600 mb-3">
           Your weekly anti-highlight reel
         </p>
-        <div className="max-w-md mx-auto">
-          <p className="text-sm leading-relaxed opacity-90 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/20">
-            Real stories from Penn students who are tired of pretending everything is perfect. 
-            Because vulnerability is courage, and you&apos;re not alone in your struggles.
-          </p>
-        </div>
+        <p className="text-sm text-neutral-600 leading-relaxed max-w-md mx-auto">
+          Real stories from Penn students who are tired of pretending everything is perfect.
+        </p>
       </div>
 
-      {/* Mission Statement */}
-      <div className="bg-white/10 backdrop-blur-sm border-t border-white/20 px-6 py-6">
-        <div className="max-w-lg mx-auto">
-          <h2 className="text-sm font-semibold mb-2 tracking-wide">COMBATING PENN FACE, ONE STORY AT A TIME</h2>
-          <p className="text-xs leading-relaxed opacity-90">
-            Penn Face is the culture of appearing perfect while struggling in silence. This newsletter 
-            creates a space where we can drop the facade and share the messy, real, and human parts of 
-            our Penn experience. Every story is anonymous. Every struggle is valid. Every week, we grow stronger together.
+      {/* Hero Image */}
+      <div className="relative w-full h-64 overflow-hidden border-t border-neutral-200">
+        <Image 
+          src="/hero-statue.jpg" 
+          alt="Contemplative statue representing vulnerability"
+          fill
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <p className="text-sm font-medium italic max-w-lg">
+            &ldquo;It&apos;s okay to not be okay. Behind every perfect facade is a real person with real struggles.&rdquo;
           </p>
         </div>
       </div>
